@@ -7,4 +7,6 @@
 | -----------            | -----------                                                  |
 | Challenge Code 01      | [Reverse an Array](array-reverse/README.md)                  |
 | Challenge Code 02      | [Array insert && shift](array-insert-shift/README.md)        |
+| Challenge Code 03      | [Array Binary search](array-binary-search/README.md)          |
+
 
