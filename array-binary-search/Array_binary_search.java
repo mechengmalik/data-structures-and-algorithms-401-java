@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class Main {
+public class Array_binary_search {
     public static void main(String[] args) {
         int[] arr = { 1,8,15,23,42 };
         System.out.println(binarySearch(arr,23)); 
