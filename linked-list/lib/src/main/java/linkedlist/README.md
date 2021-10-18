@@ -7,7 +7,7 @@ write the data structure Linked List with function:
 
 ## Whiteboard Process
 
-![whiteboard](./linkedlist1.png)
+![whiteboard](https://github.com/mechengmalik/data-structures-and-algorithms-401-java/blob/main/linked-list/lib/src/main/java/linkedlist/linkedList1.png?raw=true)
 
 ## Approach & Efficiency
 
