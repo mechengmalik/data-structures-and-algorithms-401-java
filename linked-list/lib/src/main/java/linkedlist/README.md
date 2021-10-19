@@ -8,7 +8,7 @@ write the data structure Linked List with function:
 ## Whiteboard Process
 
  linked-list-insertions
-![whiteboard](./linkedlist1.png)
+![whiteboard](./linkedList1.png)
 
 
 
@@ -28,7 +28,7 @@ ________________________________________________________
 ## code challenge 7
 ## linked-list-kth
 
-![whiteboard](./linkedList33.png)
+![whiteboard](./linkedlist33.png)
 
 ## Approach & Efficiency
 * Step through the code and keep track of the linked list's values in a table.
