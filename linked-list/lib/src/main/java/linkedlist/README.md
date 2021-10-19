@@ -15,9 +15,17 @@ It is a data structure consisting of a collection of nodes which together repres
 ________________________________________________________
 ## code challenge 6
 ## linked-list-insertions
-Create a k-th method that returns the value of the node k places from the tail of the linked list.
 
 ![whiteboard](./linkedList2.png)
+
+## Approach & Efficiency
+
+--------------------------------------
+
+## code challenge 7
+## linked-list-kth
+
+![whiteboard](./linkedList33.png)
 
 ## Approach & Efficiency
 * Step through the code and keep track of the linked list's values in a table.
