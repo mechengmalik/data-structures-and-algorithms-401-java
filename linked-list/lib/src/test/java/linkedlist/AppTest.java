@@ -9,16 +9,31 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class AppTest {
 
+    //challenge 8
+    @Test void  testLinkedListZip(){
+        LinkedList list1 = new LinkedList();
+        list1.append(1);
+        list1.append(2);
+        list1.append(3);
+
+        LinkedList list2 = new LinkedList();
+        list2.append(11);
+        list2.append(22);
+        list2.append(33);
+        LinkedList test = new LinkedList();
+        assertEquals("{1}->{11}->{2}->{22}->{3}->{33}->NUll",test.zipList(list1,list2));
+    }
+
 
     //challenge 7
     @Test void kthTest(){
         LinkedList<Integer> ls=new LinkedList<>();
-        assertEquals(null,ls.kth(0));
+//        assertEquals("the number you insret bigger than the length oh linkedlist",ls.kth(1));
         //Where k and the size of the list are the same
         ls.append(1);
         assertEquals(null,ls.kth(5));
         //Where k is not a positive integer
-        assertEquals(null,ls.kth(-1));
+        assertEquals(null,ls.kth(1));
         //linked list is of a size 1
         assertEquals(1,ls.kth(1));
 
@@ -105,7 +120,7 @@ class AppTest {
         ls.insert(1);
         ls.insert(3);
         ls.insert(23);
-        assertEquals("{ 1 } ->{ 3 } ->{ 23 } ->NULL",ls.toString(),"should return the list ");
+        assertEquals("{23}->{3}->{1}->NUll",ls.toString(),"should return the list ");
     }
 
 }
