@@ -7,7 +7,10 @@ write the data structure Linked List with function:
 
 ## Whiteboard Process
 
+ linked-list-insertions
 ![whiteboard](./linkedlist1.png)
+
+
 
 ## Approach & Efficiency
 
