@@ -1,8 +1,20 @@
 package linkedlist;
 
+
+import java.util.ArrayList;
+
 public class LinkedList <T>{
     Node head;
+    int size;
+
+    public LinkedList() {
+        this.head = null;
+        this.size = 0;
+    }
+
+
     public void insert(T value){
+        size++;
         Node pointer = new Node(value);
         pointer.next = head;
         head= pointer;
@@ -35,6 +47,7 @@ public class LinkedList <T>{
         return str;
     }
     public  void append(T value){
+        size++;
         Node pointer = head;
         Node newNode =new Node(value);
 //        node.next = null;
@@ -51,6 +64,7 @@ public class LinkedList <T>{
     }
 
     public  void insertBefore(T value,T newValue){
+        size++;
         if (head.value == value) {
             this.insert(newValue);
 
@@ -72,6 +86,7 @@ public class LinkedList <T>{
 
     }
     public void insertAfter(Integer value,Integer newValue) {
+        size++;
         Node newNode = new Node(newValue);
         Node pointer = head;
 
@@ -85,7 +100,35 @@ public class LinkedList <T>{
         }
 
     }
+    public Object kth(int k){
+
+        if(k<=0){
+            return "chose number positive";
+        }else if(k>=this.size){
+            return "the number you insret bigger than the length oh linkedlist";
+        }else{
+            ArrayList<Object> array = new ArrayList<>();
+            Node pointer =head;
+            while (pointer !=null){
+                array.add(pointer.value);
+                pointer=pointer.next;
+
+            }
+            return  array.get(array.size()-k);
+        }
+
+
+
+
+
+
+    }
 
 
 
 }
+
+
+
+
+
