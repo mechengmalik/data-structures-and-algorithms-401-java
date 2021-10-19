@@ -38,6 +38,17 @@ write the data structure Linked List with function:
 * Explanatory testing based on inputs and outputs.
 * The linked list.
 
+## code challenge 8
+## Zip two linked lists
+Write a function named zip lists that can combine two linked lists into one, with nodes alternating between the two lists, and return a reference to the zipped list's head.
+
+![whiteboard](./linkedlist4.png)
+
+## Approach & Efficiency
+* tow linked lists as input
+* To determine the number of iterations required, check the length of two linked lists and save the maximum length in a variable (use max as a counter).
+* Create a new node with a pointer to the head of linked list 1 and another pointer to the head of linked list 2. Iterate over two linked lists, checking if either of the pointers is null. If not, we add the value to new linked list 3 and lower the counter by one.
+* return the connected list 3.
 
 
 
