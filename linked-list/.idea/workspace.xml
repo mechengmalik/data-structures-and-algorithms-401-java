@@ -5,26 +5,44 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1a565e9f-42c9-479d-b642-da38f530617d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../.gitattributes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lib/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lib/src/main/java/data/structures/and/algorithms/java/Library.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lib/src/test/java/data/structures/and/algorithms/java/LibraryTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../linkedlist/.idea/linkedlist.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../linkedlist/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../data-structures-and-algorithms-401-java.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../data-structures-and-algorithms-401-java.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/main/java/linkedlist/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/linkedlist/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/main/java/linkedlist/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/linkedlist/LinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/main/java/linkedlist/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/linkedlist/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/test/java/linkedlist/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/test/java/linkedlist/AppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linkedlist/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linkedlist/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linkedlist/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linkedlist/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linkedlist/.idea/linkedlist.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linkedlist/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linkedlist/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linkedlist/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linkedlist/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linkedlist/.settings/org.eclipse.buildship.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linkedlist/app/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linkedlist/app/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linkedlist/app/.settings/org.eclipse.buildship.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linkedlist/app/bin/main/linkedlist/App.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linkedlist/app/bin/main/linkedlist/LinkedList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linkedlist/app/bin/main/linkedlist/Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linkedlist/app/bin/main/linkedlist/cde5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linkedlist/app/bin/test/linkedlist/AppTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linkedlist/app/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linkedlist/app/src/main/java/linkedlist/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linkedlist/app/src/main/java/linkedlist/LinkedList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linkedlist/app/src/main/java/linkedlist/Node.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linkedlist/app/src/main/java/linkedlist/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linkedlist/app/src/main/java/linkedlist/linkedlist.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linkedlist/app/src/test/java/linkedlist/AppTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linkedlist/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linkedlist/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linkedlist/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linkedlist/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linkedlist/settings.gradle" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +85,7 @@
       <recent name="C:\Users\STUDENT\401\data-structures-and-algorithms-401-java\linked-list\lib\src\main\java\linkedlist" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Gradle.AppTest.kthTest">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="linkedlist.App" />
       <module name="linked-list.lib.main" />
@@ -81,8 +99,52 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="AppTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;linkedlist.AppTest&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":lib:test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="AppTest.kthTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;linkedlist.AppTest.kthTest&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":lib:test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.AppTest.kthTest" />
+        <item itemvalue="Gradle.AppTest" />
         <item itemvalue="Application.App" />
       </list>
     </recent_temporary>
