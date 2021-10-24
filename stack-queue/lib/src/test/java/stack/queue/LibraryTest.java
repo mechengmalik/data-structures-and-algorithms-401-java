@@ -9,14 +9,14 @@ import static org.junit.jupiter.api.Assertions.*;
 class LibraryTest {
 
     @Test void testCanPush(){
-        Stack stack = new Stack();
+        Stack<String> stack = new Stack<>();
         stack.push("1");
         stack.push("2");
         String str = "{2}->{1}->NUll";
         assertEquals(str,stack.toString());
     }
     @Test void testPop() throws Exception {
-        Stack stack =new Stack();
+        Stack<String> stack =new Stack<>();
         stack.push("1");
         stack.push("2");
         stack.pop();
@@ -26,7 +26,7 @@ class LibraryTest {
 
     }
     @Test void testPeek() throws Exception {
-        Stack stack =new Stack();
+        Stack<String> stack =new Stack<>();
         stack.push("1");
         stack.push("2");
         System.out.println(stack.peek().toString());
@@ -79,7 +79,7 @@ class LibraryTest {
 
     }
     @Test void testEnqueueToQueue() throws Exception {
-        Queue queue = new Queue();
+        Queue<String> queue = new Queue<String>();
         queue.enqueue("1");
         queue.enqueue("2");
 
@@ -92,7 +92,7 @@ class LibraryTest {
     }
     @Test void testDequeueFromQueue() throws Exception {
 
-            Queue queue =new Queue();
+            Queue<String> queue =new Queue<>();
             queue.enqueue("1");
             queue.enqueue("2");
             queue.dequeue();
@@ -102,7 +102,7 @@ class LibraryTest {
     }
 
     @Test void testPeekQueue() throws Exception {
-        Queue queue =new Queue();
+        Queue<String> queue =new Queue<String>();
         queue.enqueue("1");
         queue.enqueue("2");
         System.out.println(queue.peek().toString());
@@ -111,6 +111,26 @@ class LibraryTest {
 
 
     }
+
+    @Test void stackQueuePsudo() {
+
+
+        // testing that its enqueue properly
+        PseudoQueue test = new PseudoQueue<>();
+        test.enqueue("5");
+        Object str= test.dequeue();
+        assertEquals("5",str);
+    }
+
+    @Test void errorTestForStackedQueue() {
+
+        PseudoQueue test = new PseudoQueue<>();
+
+        String errorMsg = test.dequeue();
+        assertEquals("the Queue is empty", errorMsg);
+
+    }
+
 
 
 

@@ -21,7 +21,7 @@ class Queue<T> {
     }
 
 
-    public void enqueue(T value) throws Exception {
+    public void enqueue(T value)  {
         Node newNode = new Node(value);
         size++;
         if (isEmpty()) {
@@ -35,11 +35,11 @@ class Queue<T> {
 
     }
 
-    public String dequeue() throws Exception {
+    public String dequeue()  {
         size--;
         Node temp = front;
         if (isEmpty()) {
-            throw new Exception("can`t delete cause the queue is empty");
+            return ("can`t delete cause the queue is empty");
         }
         front = front.next;
         temp.next = null;
@@ -47,9 +47,9 @@ class Queue<T> {
 
 
     }
-    public String peek() throws Exception {
+    public String peek() {
         if (isEmpty()) {
-            throw new Exception("Queue is Empty");
+            return ("Queue is Empty");
         } else {
             return (String) rear.getValue();
         }
