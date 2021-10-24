@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+stack-queue-pseudo
     <list default="true" id="1a565e9f-42c9-479d-b642-da38f530617d" name="Changes" comment="" />
+
+    <list default="true" id="1a565e9f-42c9-479d-b642-da38f530617d" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/main/java/linkedlist/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/linkedlist/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/main/java/linkedlist/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/linkedlist/LinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/test/java/linkedlist/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/test/java/linkedlist/AppTest.java" afterDir="false" />
+    </list>
+ main
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,6 +30,7 @@
         <task path="$PROJECT_DIR$">
           <activation />
         </task>
+ stack-queue-pseudo
         <projects_view>
           <tree_state>
             <expand>
@@ -32,6 +42,9 @@
             <select />
           </tree_state>
         </projects_view>
+
+        <projects_view />
+ main
       </state>
     </system>
   </component>
@@ -71,7 +84,11 @@
       <recent name="C:\Users\STUDENT\401\data-structures-and-algorithms-401-java\linked-list\lib\src\main\java\linkedlist" />
     </key>
   </component>
+ stack-queue-pseudo
   <component name="RunManager" selected="Gradle.AppTest">
+=======
+  <component name="RunManager" selected="Application.App">
+ main
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="linkedlist.App" />
       <module name="linked-list.lib.main" />
@@ -169,11 +186,36 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="AppTest.toStringTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;linkedlist.AppTest.toStringTest&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":lib:test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.AppTest" />
+ stack-queue-pseudo
         <item itemvalue="Gradle.AppTest.insertTest" />
         <item itemvalue="Gradle.AppTest.instantiateEmptyLinkedList" />
+=======
+        <item itemvalue="Gradle.AppTest.toStringTest" />
+ main
         <item itemvalue="Gradle.AppTest.kthTest" />
         <item itemvalue="Application.App" />
       </list>
