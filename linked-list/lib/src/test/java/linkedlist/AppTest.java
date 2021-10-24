@@ -46,7 +46,7 @@ class AppTest {
 
 
     }
-    //challenge 6
+    //challenge  5 & 6
 
     @Test void instantiateEmptyLinkedList(){
         LinkedList ls= new LinkedList();

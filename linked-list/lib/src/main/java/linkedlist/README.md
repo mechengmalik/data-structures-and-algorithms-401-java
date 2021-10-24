@@ -1,5 +1,6 @@
 
 # Linked List
+## code challenge 5
 
 
 
@@ -8,20 +9,63 @@
 ![whiteboard](./linkedList1.png)
 
 ## Approach & Efficiency
-
-It is a data structure consisting of a collection of nodes which together represent a sequence.in this data structure element points to the next.
+write the data structure Linked List with function:
+* insert :to add node
+* include : to find if the wanted value in on the linked List
+* toString : to print the value of the linked list
 ________________________________________________________
+insert method:
+Time O(1)
+Space O(1)
+include method :
+Time O(n)
+Space O(1)
+toString method:
+Time O(n)
+Space O(1)
+append()
+Time O(n)
+Space O(1)
+insertBefore()
+Time O(n)
+Space O(1)
+insertAfter()
+Time O(n)
+Space O(1)
+
+
+
+
 ## code challenge 6
-## linked-list-insertions
+## linked-list-insertion
 
 
 ![whiteboard](./linkedList2.png)
 
 ## Approach & Efficiency
-write the data structure Linked List with function:
-* insert :to add node
-* include : to find if the wanted value in on the linked List
-* toString : to print the value of the linked list
+append()
+Time O(n)
+Space O(1)
+insertBefore()
+Time O(n)
+Space O(1)
+insertAfter()
+Time O(n)
+Space O(1)
+
+## API
+* append
+  * Arguments: value
+  * Returns: nothing
+  * adds a new node with the given value to the end of the list
+* insert before
+  * arguments: value, new value
+  * Returns: nothing
+  * adds a new node with the given new value immediately before the first node that has the value specified
+* insert after
+  * arguments: value, new value
+  * Returns: nothing
+  * adds a new node with the given new value immediately after the first node that has the value specified
 
 --------------------------------------
 

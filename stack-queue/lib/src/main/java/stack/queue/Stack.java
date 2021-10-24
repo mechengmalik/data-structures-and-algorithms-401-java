@@ -25,9 +25,9 @@ public class Stack <T> {
         return false;
     }
 
-    public Object pop () throws Exception{
+    public Object pop () {
         if(isEmpty()){
-            throw new Exception("can`t be deleted from empty stack") ;
+            return ("can`t be deleted from empty stack") ;
         }
 
         Node temp = top;
@@ -36,9 +36,9 @@ public class Stack <T> {
         return temp.value;
     }
 
-    public String peek() throws Exception {
+    public String peek()  {
         if (isEmpty()) {
-            throw new Exception("can`t be located the data is empty");
+            return ("can`t be located the data is empty");
         } else {
            return (String) top.getValue();
         }

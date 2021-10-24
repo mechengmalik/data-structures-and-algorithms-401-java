@@ -50,3 +50,24 @@ The class should contain the following methods:
 * dequeue:Returns the value from the queue's first node. Removes the node from the queue's front.
 
 ________________________________________________________
+## Challenge #11
+create a PseudoQueue class which have two Stack instances as fields, and two methods : enqueue , dequeue.
+
+## Whiteboard Process
+![pseudo](Psudo-queue1.jpg)
+## Approach & Efficiency
+* enqueue
+  * time complexity will be O(n)
+  * space o(n)
+* deQueue
+  * time complexity will be O(1)
+  * space o(1)
+  
+## Solution
+enqueue(x)
+While stack1 is not empty, push everything from stack1 to stack2.
+Push x to stack1 (assuming size of stacks is unlimited).
+Push everything back to stack1.
+deQueue:
+If stack1 is empty then error
+Pop an item from stack1 and return it
