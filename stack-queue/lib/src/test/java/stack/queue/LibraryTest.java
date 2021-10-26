@@ -131,6 +131,15 @@ class LibraryTest {
 
     }
 
+    //-------------Code Challenge 12-------------------
+    @Test public void testCreateEmptyAnimalShelter() {
+        AnimalShelter animalShelter = new AnimalShelter();
+        assertEquals("AnimalShelter{cat=the queue is empty, dog=the queue is empty}",animalShelter.toString());
+    }
+
+
+
+
 
 
 
