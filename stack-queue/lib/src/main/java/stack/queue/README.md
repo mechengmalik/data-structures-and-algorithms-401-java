@@ -71,3 +71,19 @@ Push everything back to stack1.
 deQueue:
 If stack1 is empty then error
 Pop an item from stack1 and return it
+
+
+## Challenge #12
+create a PseudoQueue class which have two Stack instances as fields, and two methods : enqueue , dequeue.
+
+## Whiteboard Process
+![pseudo](ccc12.png)
+
+## Approach & Efficiency
+
+enqueue
+* time complexity will be O(n)
+* space o(1)
+* deQueue
+  * time complexity will be O(1)
+  * space o(1)
