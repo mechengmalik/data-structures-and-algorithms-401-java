@@ -87,3 +87,40 @@ enqueue
 * deQueue
   * time complexity will be O(1)
   * space o(1)
+-------------------------------------------------
+
+## Challenge #13
+create a PseudoQueue class which have two Stack instances as fields, and two methods : enqueue , dequeue.
+
+## Whiteboard Process
+![pseudo](ccc13.png)
+
+## Approach & Efficiency
+
+enqueue
+* time complexity will be O(n)
+* space o(1)
+
+## Solution
+>public static boolean validateBrackets(String mycode){
+Stack<Character> Stack = new Stack<>();
+
+        for (int i = 0; i < mycode.length(); i++) {
+            if (mycode.charAt(i) == '{' || mycode.charAt(i) == '(' || mycode.charAt(i) == '['){
+                Stack.push(mycode.charAt(i));
+
+            }else if (mycode.charAt(i) == '}' && !Stack.isEmpty() && Stack.peek() == "{"){
+                Stack.pop();
+            }else if( mycode.charAt(i) == ')' && !Stack.isEmpty() && Stack.peek() == "("){
+                Stack.pop();
+            }else if (mycode.charAt(i) == ']' && !Stack.isEmpty() && Stack.peek() == "["){
+                Stack.pop();
+            }
+        }
+
+
+
+
+        return Stack.isEmpty();
+    }
+
