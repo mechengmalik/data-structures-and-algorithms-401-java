@@ -4,8 +4,6 @@
 package stack.queue;
 
 
-import org.checkerframework.checker.units.qual.C;
-
 public class Library {
     public static void main(String[] args) throws Exception {
 //        Stack  s1 = new Stack();
@@ -47,12 +45,26 @@ public class Library {
 
 
 
+    }
+    public static boolean validateBrackets(String mycode){
+        Stack<Character> Stack = new Stack<>();
+
+        for (int i = 0; i < mycode.length(); i++) {
+            if (mycode.charAt(i) == '{' || mycode.charAt(i) == '(' || mycode.charAt(i) == '['){
+                Stack.push(mycode.charAt(i));
+
+            }else if (mycode.charAt(i) == '}' && !Stack.isEmpty() && Stack.peek() == "{"){
+                Stack.pop();
+            }else if( mycode.charAt(i) == ')' && !Stack.isEmpty() && Stack.peek() == "("){
+                Stack.pop();
+            }else if (mycode.charAt(i) == ']' && !Stack.isEmpty() && Stack.peek() == "["){
+                Stack.pop();
+            }
+        }
 
 
 
 
-
-
-
+        return Stack.isEmpty();
     }
 }
