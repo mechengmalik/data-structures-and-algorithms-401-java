@@ -50,3 +50,35 @@ implement Binary tree and Binary Search tree.
     3. Else if key < root, traverse the left subtree.
     4. Else traverse right subtree.
     5. Repetitively compare subtree elements until the key is found or the end of the tree is reached.
+
+
+## Challenge 16
+write a function Find the maximum value stored in the tree.
+
+## Approach & Efficiency
+
+* The Big O time complexity   = O(n).
+* The Big O space complexity  = O(n).
+
+## Solution
+* example:
+```
+        BinarySearchTree<Integer> test = new BinarySearchTree<>(5);
+
+        System.out.println(test.contains(4, test.root));
+        test.add(4);
+        test.add(8);
+        test.add(3);
+        System.out.println(test.contains(5,test.root));
+        System.out.println(test.inOrder(test.root).toString());
+
+        System.out.println(test.Max());
+```
+* output:
+```
+> Task :lib:Library.main()
+false
+true
+[3, 4, 5, 8]
+8
+```

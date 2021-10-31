@@ -12,13 +12,16 @@ public class Library {
         System.out.println(test.contains(4, test.root));
 
 
-        test.root.leftRoot = new Node<>(3);
-        test.root.rightRoot = new Node<>(6);
+
 
         test.add(4);
+        test.add(8);
+        test.add(3);
 
         System.out.println(test.contains(5,test.root));
         System.out.println(test.inOrder(test.root).toString());
 
+
+        System.out.println(test.Max());
     }
 }

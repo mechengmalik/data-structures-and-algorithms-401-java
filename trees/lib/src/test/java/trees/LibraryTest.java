@@ -30,5 +30,10 @@ class LibraryTest {
         //Can successfully return a collection from a postorder traversal
       assertEquals("[5, 15, 10]",binaryTree1.postOrder(binaryTree1.root).toString());
 
+//      ------------------CC 16--------------------
+      // can get the max correctly
+
+      assertEquals(15,binaryTree1.Max() );
+
   }
 }

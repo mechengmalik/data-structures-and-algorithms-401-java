@@ -65,4 +65,17 @@ public class BinaryTree<T> {
         }
         return postOrderList;
     }
+
+    public int Max(){
+        Integer max = 0;
+        ArrayList<T> list = preOrder(root);
+        for(T t : list){
+            if (max<(Integer) t){
+                max = (Integer) t;
+            }
+        }
+
+        return max;
+    }
+
 }
