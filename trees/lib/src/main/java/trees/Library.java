@@ -3,6 +3,10 @@
  */
 package trees;
 
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.Queue;
+
 public class Library {
     public static void main(String[] args) {
 
@@ -23,5 +27,32 @@ public class Library {
 
 
         System.out.println(test.Max());
+
+
+        //------------------breadthFirst------------------------//
+
+        System.out.println(breadthFirst(test));
+    }
+
+
+    public static ArrayList<Integer>  breadthFirst(BinaryTree<Integer> tree){
+        ArrayList<Integer> values =new ArrayList<Integer>();
+        Queue<Node> q1 = new LinkedList<>();
+        q1.add(tree.root);
+        while (!q1.isEmpty()){
+
+
+            Node n = q1.remove();
+            values.add((Integer) n.value);
+            if (n.leftRoot != null ){
+                q1.add(n.leftRoot);
+            }
+            if (n.rightRoot != null){
+                q1.add(n.rightRoot);
+            }
+
+        }
+
+        return values;
     }
 }

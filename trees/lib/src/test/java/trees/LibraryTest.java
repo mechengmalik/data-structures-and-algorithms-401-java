@@ -35,5 +35,12 @@ class LibraryTest {
 
       assertEquals(15,binaryTree1.Max() );
 
+
+
+
+      //------------------CC 17--------------------//
+      //check for a normal binary tree returns
+      assertEquals("[10, 5, 15]",Library.breadthFirst(binaryTree1).toString());
+
   }
 }

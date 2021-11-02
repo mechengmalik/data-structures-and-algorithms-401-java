@@ -55,6 +55,11 @@ implement Binary tree and Binary Search tree.
 ## Challenge 16
 write a function Find the maximum value stored in the tree.
 
+## Whiteboard Process
+![breadth](treeMax.png)
+
+
+
 ## Approach & Efficiency
 
 * The Big O time complexity   = O(n).
@@ -81,4 +86,35 @@ false
 true
 [3, 4, 5, 8]
 8
+```
+
+## Challenge 17
+Write a function called breadth first Return list of all values in the tree, in the order they were encountered
+
+## Whiteboard Process
+![breadth](breathFirst.png)
+
+
+
+## Approach & Efficiency
+
+* The Big O time complexity   = O(n).
+* The Big O space complexity  = O(n).
+
+## Solution
+* example:
+```
+        BinarySearchTree<Integer> test = new BinarySearchTree<>(5);
+
+        System.out.println(test.contains(4, test.root));
+        test.add(4);
+        test.add(8);
+        test.add(3);
+       System.out.println(breadthFirst(test));
+```
+* output:
+```
+> Task :lib:Library.main()
+
+[5, 4, 8, 3]
 ```
