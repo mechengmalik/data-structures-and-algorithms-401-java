@@ -118,3 +118,36 @@ Write a function called breadth first Return list of all values in the tree, in 
 
 [5, 4, 8, 3]
 ```
+
+
+
+##Challenge 18
+write a function which accepts a k-ary tree as an parameter and return a k-ary tree with a values of fizz if the original tree node value is devisible by 3 , or value buzz if it devisible by 5 or fizz buzz if it devisible by both
+
+## Whiteboard Process
+![whiteboard](FizzBuzz.png)
+
+## Approach & Efficiency
+* The Big O time complexity   = O(n).
+* The Big O space complexity  = O(n).
+
+## Solution
+example:
+
+```
+        KaryTree<Integer> tree = new KaryTree<>(3);
+        tree.add(3);
+        tree.add(5);
+        tree.add(15);
+        tree.add(9);
+        tree.add(20);
+        tree.add(8);
+
+        System.out.println(tree.breadthFirstSearch());
+        System.out.println(KaryTree.fizzBuzzTree(tree).breadthFirstSearch());
+```
+
+output:
+```
+[Buzzz, Buzzz, FizzBuzzz, Fizzz, FizzBuzzz, 8, Fizzz, 1]
+```

@@ -7,6 +7,8 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Queue;
 
+import static trees.KaryTree.fizzBuzzTree;
+
 public class Library {
     public static void main(String[] args) {
 
@@ -32,6 +34,22 @@ public class Library {
         //------------------breadthFirst------------------------//
 
         System.out.println(breadthFirst(test));
+
+
+        //------------------KaryTree------------------------//
+
+        KaryTree<Integer> tree = new KaryTree<>(3);
+        tree.add(3);
+        tree.add(5);
+        tree.add(15);
+        tree.add(9);
+        tree.add(20);
+        tree.add(8);
+
+        System.out.println(tree.breadthFirstSearch());
+        System.out.println(KaryTree.fizzBuzzTree(tree).breadthFirstSearch());
+
+
     }
 
 
@@ -55,4 +73,12 @@ public class Library {
 
         return values;
     }
+
+
+
+
+
+
+
+
 }

@@ -3,7 +3,12 @@
  */
 package trees;
 
+import org.checkerframework.checker.units.qual.K;
 import org.junit.jupiter.api.Test;
+
+import java.util.Arrays;
+import java.util.List;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class LibraryTest {
@@ -42,5 +47,45 @@ class LibraryTest {
       //check for a normal binary tree returns
       assertEquals("[10, 5, 15]",Library.breadthFirst(binaryTree1).toString());
 
+
+      //------------------CC 18--------------------//
+//      If the value is divisible by 3, replace the value with “Fizz”
+//      If the value is divisible by 5, replace the value with “Buzz”
+//      If the value is divisible by 3 and 5, replace the value with “FizzBuzz”
+//      If the value is not divisible by 3 or 5, simply turn the number into a String.
+      KaryTree<Integer> kTree = new KaryTree<>(3);
+      kTree.add(5);
+      kTree.add(10);
+      kTree.add(15);
+      kTree.add(3);
+      kTree.add(30);
+      kTree.add(8);
+      kTree.add(9);
+      kTree.add(1);
+
+      KaryTree<String> fizzBuzz = KaryTree.fizzBuzzTree(kTree);
+      List<String> fizBuzList = fizzBuzz.breadthFirstSearch();
+      System.out.println(fizzBuzz.breadthFirstSearch());
+      assertArrayEquals(Arrays.asList("Buzzz", "Buzzz", "FizzBuzzz", "Fizzz", "FizzBuzzz", "8", "Fizzz", "1").toArray(),fizBuzList.toArray());
+
+
+
+
+
+
+
+////      If the value is divisible by 5, replace the value with Buzz
+//      assertEquals("Buzzz",fizzbuzz.root.value);
+//
+////      If the value is divisible by 3, replace the value with Fizz
+//        assertEquals("Fizzz",);
+//
+////      If the value is divisible by 3 and 5, replace the value with FizzBuzz
+//      assertEquals("FizzBuzz",fizzbuzz.root.allChildren.get(1).value);
+
+
+
   }
+
+
 }
