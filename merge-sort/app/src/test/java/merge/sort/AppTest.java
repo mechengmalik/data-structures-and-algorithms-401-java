@@ -10,17 +10,19 @@ import java.util.Arrays;
 import static org.junit.Assert.*;
 
 class AppTest {
-    @Test void appHasAGreeting() {
+    @Test public void appHasAGreeting() {
         App classUnderTest = new App();
-        assertNotNull(classUnderTest.getGreeting(), "app should have a greeting");
-
-
     }
-    @Test void testMergingSort(){
-        int[] testing = {8,4,23,42,16,15};
-        int[] result = {4,8,15,16,23,42};
-        assertEquals(Arrays.toString(result),Arrays.toString(App.mergeSort(testing)));
 
+
+    @Test public void testQuickSort(){
+        int[] arr = {8,4,23,42,16,15};
+        int[] result = {4,8,15,16,23,42};
+
+
+        App.mergeSort(arr);
+
+        assertArrayEquals(result,arr);
     }
 
 }
