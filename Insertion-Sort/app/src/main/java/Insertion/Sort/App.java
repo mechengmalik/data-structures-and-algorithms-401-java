@@ -3,13 +3,17 @@
  */
 package Insertion.Sort;
 
+import java.sql.Array;
+import java.util.Arrays;
+
 public class App {
     public String getGreeting() {
         return "Hello World!";
     }
     public  static  void  main(String[] args){
-        int[] testarray = {8,4,23,42,16,15};
-
+        int[] testArray = {8,4,23,42,16,15};
+        System.out.println(Arrays.toString(testArray));
+        System.out.println(Arrays.toString(insertionSort(testArray)));
 
     }
     public static  int[] insertionSort(int[] list){

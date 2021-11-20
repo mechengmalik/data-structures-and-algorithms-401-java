@@ -14,9 +14,15 @@ public class AppTest {
     @Test public void appHasAGreeting() {
         App classUnderTest = new App();
         assertNotNull("app should have a greeting", classUnderTest.getGreeting());
-        int[] testing = {8,4,23,42,16,15};
+    }
+
+    @Test public void testQuickSort(){
+        int[] arr = {8,4,23,42,16,15};
         int[] result = {4,8,15,16,23,42};
 
-        assertEquals(Arrays.toString(result),Arrays.toString(quickSort(testing, 0, testing.length-1)));
+
+        App.quickSort(arr, 0, arr.length - 1);
+
+        assertArrayEquals(result,arr);
     }
 }
