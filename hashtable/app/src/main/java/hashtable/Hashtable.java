@@ -12,6 +12,10 @@ public class Hashtable <T>{
         }
     }
 
+    public Hashtable() {
+
+    }
+
     public int hash(T key){
         int asciiCode = 0;
 

@@ -4,6 +4,8 @@
 package hashtable;
 
 import java.util.Arrays;
+import java.util.HashMap;
+import java.util.regex.Pattern;
 
 public class App {
     public static void main(String[] args) {
@@ -51,8 +53,40 @@ public class App {
         System.out.println(newHash.nodesArray[2].next);
 
 //
-
+        String text = "It was the best of times, it was the worst of times,";
+        System.out.println(repeatedWord(text));
 
     }
+    public static String  repeatedWord(String text){
+        HashMap<String,Integer> array = new HashMap<>();
+        String result = null;
 
+        String[] arrayOfWords = text.split(" ");
+
+        for (int i = 0; i < arrayOfWords.length; i++) {
+
+            if (arrayOfWords[i].contains(",")){
+                arrayOfWords[i] = deleteComaFromString(arrayOfWords[i]);
+            }
+
+
+            if (array.containsKey(arrayOfWords[i].toLowerCase())){
+                result = arrayOfWords[i];
+                break;
+            }else{
+                array.put(arrayOfWords[i].toLowerCase(),i);
+            }
+        }
+        return result;
+    }
+
+
+
+
+    public static String deleteComaFromString(String str){
+        str = str.substring(0, str.length() - 1);
+        return str;
+    }
 }
+
+
