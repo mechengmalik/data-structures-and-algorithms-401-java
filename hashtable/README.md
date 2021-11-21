@@ -16,3 +16,29 @@ the big O notation is big O(n) for the time and space because the use of while l
 2. add(): to add a new key-value pair to the hash table.
 3. get(): to check and return the value of the given key.
 4. contains: to check if the key exists in the hash table and returns a boolean indicates if true or false.
+
+# code challenge 31 (HashMap)
+
+Write a function called repeated word that finds the first word to occur more than once in a string
+
+## Whiteboard 
+
+![board](CC31.png)
+
+## Approach & Efficiency
+
+using a loop and creating new array the big O(n) will become:
+
+time--> O(n) 
+space--> O(n)
+## Solution
+
+example of how to use the code:
+
+```
+String words = "It was the best of times, it was the worst of times,";
+        System.out.println(repeatedWord(text));
+```
+here is the output of it:
+
+![output](cc31%20output.png)

@@ -24,5 +24,7 @@
 | Merge-Sort-Blog                    | [link](merge-sort/BLOG.md)                                  |
 | quick-Sort                         | [link](quick-sort/README.md)                                  |
 | quick-Sort-Blog                    | [link](quick-sort/BLOG.md)                                  |
+| Hash Table                         | [link](hashtable/README.md)                                  |
+| hashmap-repeated-word              | [link](hashtable/README.md)                                  |
 
 

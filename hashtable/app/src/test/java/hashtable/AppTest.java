@@ -5,8 +5,8 @@ package hashtable;
 
 import org.junit.Test;
 
-import static junit.framework.TestCase.assertEquals;
-import static junit.framework.TestCase.assertTrue;
+import static hashtable.App.repeatedWord;
+import static junit.framework.TestCase.*;
 
 
 public class AppTest {
@@ -50,5 +50,33 @@ public class AppTest {
         assertEquals(9,hashtable.hash("hi"));
 
 
+
+
+
     }
+    //-------------------code challenge 31--------------------------
+
+
+    @Test public void repeatedWordTest() {
+        // testing for repeatedWord function
+
+        String test = "Once upon a time, there was a brave princess who...";
+        assertEquals("a", repeatedWord(test));
+
+        String test2 = "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair, we had everything before us, we had nothing before us, we were all going direct to Heaven, we were all going direct the other way – in short, the period was so far like the present period, that some of its noisiest authorities insisted on its being received, for good or for evil, in the superlative degree of comparison only...";
+        assertEquals("it", repeatedWord(test2));
+
+        String test3 = "It was a queer, sultry summer, the summer they electrocuted the Rosenbergs, and I didn’t know what I was doing in New York...";
+        assertEquals("summer", repeatedWord(test3));
+
+
+
+        // testing if the string doesn't have a repeated words, it should return null
+
+        String test4 = "I wish you enjoy";
+
+        assertNull(repeatedWord(test4));
+
+    }
+
 }
