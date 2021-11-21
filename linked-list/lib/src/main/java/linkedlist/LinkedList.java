@@ -117,11 +117,35 @@ public class LinkedList <T>{
             return  array.get(array.size()-k);
         }
 
+    }
+
+    public   Object zipList(LinkedList list1,LinkedList list2){
+        ArrayList ls3 = new ArrayList();
+
+        Node pointer1 =list1.head;
+        Node pointer2 = list2.head;
+        int i=0;
+        if (list1.size> list2.size){
+            i = list1.size;
+        }
+        if (list2.size> list1.size){
+            i = list2.size;
+        }
+        while (i>0){
+            if(pointer1 != null) {
+               ls3.add((pointer1.value));
+                pointer1 = pointer1.next;
 
 
+            }
+            if (pointer2 != null){
+               ls3.add(pointer2.value);
+                pointer2 = pointer2.next;
 
-
-
+            }
+            i--;
+        }
+        return ls3;
     }
 
 
