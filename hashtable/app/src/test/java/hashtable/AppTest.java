@@ -5,6 +5,8 @@ package hashtable;
 
 import org.junit.Test;
 
+import java.util.Arrays;
+
 import static hashtable.App.repeatedWord;
 import static junit.framework.TestCase.*;
 
@@ -77,6 +79,29 @@ public class AppTest {
 
         assertNull(repeatedWord(test4));
 
+    }
+
+    @Test public void testHashTable3(){
+        BinaryTree<Integer> tree1 = new BinaryTree<>();
+        tree1.root = new TreeNode<Integer>(150);
+        tree1.root.left = new TreeNode<Integer>(100);
+        tree1.root.right = new TreeNode<Integer>(250);
+        tree1.root.left.left = new TreeNode<Integer>(75);
+        tree1.root.left.right = new TreeNode<Integer>(160);
+        tree1.root.left.right.left = new TreeNode<Integer>(125);
+
+
+        BinaryTree<Integer> tree2 = new BinaryTree<>();
+        tree2.root = new TreeNode<Integer>(42);
+        tree2.root.left = new TreeNode<Integer>(100);
+        tree2.root.right = new TreeNode<Integer>(600);
+        tree2.root.left.left = new TreeNode<Integer>(15);
+        tree2.root.left.right = new TreeNode<Integer>(160);
+        tree2.root.left.right.left = new TreeNode<Integer>(125);
+
+
+
+        assertEquals( Arrays.asList(75, 100, 125, 160, 150, 250, 15, 100, 125, 160, 42, 600),App.treeIntersection(tree1,tree2));
     }
 
 }

@@ -42,3 +42,19 @@ String words = "It was the best of times, it was the worst of times,";
 here is the output of it:
 
 ![output](cc31%20output.png)
+
+### Challenge 32
+
+### find a set of values found in both trees.
+
+![img](CC32.png)
+
+### Approach & Efficiency
+Time : o(n)
+Space:o(n)
+
+### API
+
+* treeIntersection: takes two binary trees as parameters,
+  Using Hashmap implementation ,return a set of values found in both trees.
+

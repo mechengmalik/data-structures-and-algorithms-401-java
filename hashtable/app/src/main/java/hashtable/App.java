@@ -3,8 +3,10 @@
  */
 package hashtable;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
+import java.util.List;
 import java.util.regex.Pattern;
 
 public class App {
@@ -56,6 +58,35 @@ public class App {
         String text = "It was the best of times, it was the worst of times,";
         System.out.println(repeatedWord(text));
 
+        //---------------binary tree -------------
+
+        BinaryTree<Integer> tree1 = new BinaryTree<>();
+        tree1.root = new TreeNode<Integer>(150);
+        tree1.root.left = new TreeNode<Integer>(100);
+        tree1.root.right = new TreeNode<Integer>(250);
+        tree1.root.left.left = new TreeNode<Integer>(75);
+        tree1.root.left.right = new TreeNode<Integer>(160);
+        tree1.root.left.right.left = new TreeNode<Integer>(125);
+        tree1.root.left.right.right = new TreeNode<Integer>(175);
+        tree1.root.right.left = new TreeNode<Integer>(200);
+        tree1.root.right.right = new TreeNode<Integer>(350);
+        tree1.root.right.right.left = new TreeNode<Integer>(300);
+        tree1.root.right.right.right = new TreeNode<Integer>(500);
+
+        BinaryTree<Integer> tree2 = new BinaryTree<>();
+        tree2.root = new TreeNode<Integer>(42);
+        tree2.root.left = new TreeNode<Integer>(100);
+        tree2.root.right = new TreeNode<Integer>(600);
+        tree2.root.left.left = new TreeNode<Integer>(15);
+        tree2.root.left.right = new TreeNode<Integer>(160);
+        tree2.root.left.right.left = new TreeNode<Integer>(125);
+        tree2.root.left.right.right = new TreeNode<Integer>(175);
+        tree2.root.right.left = new TreeNode<Integer>(200);
+        tree2.root.right.right = new TreeNode<Integer>(350);
+        tree2.root.right.right.left = new TreeNode<Integer>(4);
+        tree2.root.right.right.right = new TreeNode<Integer>(500);
+        System.out.println(treeIntersection(tree1,tree2));
+
     }
     public static String  repeatedWord(String text){
         HashMap<String,Integer> array = new HashMap<>();
@@ -87,6 +118,31 @@ public class App {
         str = str.substring(0, str.length() - 1);
         return str;
     }
+
+
+    public static List<Integer> treeIntersection(BinaryTree<Integer> tree1, BinaryTree<Integer> tree2) {
+        List<Integer> l1 = tree1.inOrder(tree1.root);
+        List<Integer> l2 = tree1.inOrder(tree2.root);
+
+        List<Integer> results = new ArrayList<>();
+        Hashtable<Integer> hashtable = new Hashtable<>(results.size()+1);
+
+        for (int i = 0; i < l1.size(); i++) {
+            hashtable.add(l1.get(i),i);
+
+            if (hashtable.contains(l2.get(i))){
+                results.add(l2.get(i));
+
+
+            }
+
+
+        }
+        return  results;
+
+
+    }
+
 }
 
 
