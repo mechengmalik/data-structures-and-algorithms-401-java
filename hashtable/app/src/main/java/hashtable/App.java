@@ -7,41 +7,40 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
-import java.util.regex.Pattern;
 
 public class App {
     public static void main(String[] args) {
 
 
 
-        Hashtable<Object> newHash = new Hashtable<>(3);
-
-        newHash.add("s1", "malik");
-        newHash.add("s2", "mahmoud");
-
-        System.out.println(newHash.hash("s1"));
-        System.out.println(newHash.contains("s1"));
-
-
-        System.out.println(newHash.hash("s2"));
-        System.out.println(newHash.contains("s2"));
-
-        System.out.println(newHash.get("s1"));
-        System.out.println(newHash.get("s2"));
-        System.out.println(newHash.get("s3"));
-
-
-        newHash.add("s3", "swayyed");
-        System.out.println(newHash.hash("s3"));
-        System.out.println(newHash.contains("s3"));
-        System.out.println(newHash.get("s3"));
-
-        newHash.add("s4", "collision");
-        System.out.println(newHash.hash("s4"));
-        System.out.println(newHash.contains("s4"));
-        System.out.println(newHash.get("s4"));
-        System.out.println(newHash.get("s1"));
-
+//        Hashtable<Object> newHash = new Hashtable<>(3);
+//
+//        newHash.add("s1", "malik");
+//        newHash.add("s2", "mahmoud");
+//
+//        System.out.println(newHash.hash("s1"));
+//        System.out.println(newHash.contains("s1"));
+//
+//
+//        System.out.println(newHash.hash("s2"));
+//        System.out.println(newHash.contains("s2"));
+//
+//        System.out.println(newHash.get("s1"));
+//        System.out.println(newHash.get("s2"));
+//        System.out.println(newHash.get("s3"));
+//
+//
+//        newHash.add("s3", "swayyed");
+//        System.out.println(newHash.hash("s3"));
+//        System.out.println(newHash.contains("s3"));
+//        System.out.println(newHash.get("s3"));
+//
+//        newHash.add("s4", "collision");
+//        System.out.println(newHash.hash("s4"));
+//        System.out.println(newHash.contains("s4"));
+//        System.out.println(newHash.get("s4"));
+//        System.out.println(newHash.get("s1"));
+//
 
 
 
@@ -49,43 +48,67 @@ public class App {
 //        System.out.println(newHash.nodesArraySize);
 //        System.out.println(newHash.nodesArray[5].value);
 //
-        System.out.println(Arrays.toString(newHash.nodesArray));
+//        System.out.println(Arrays.toString(newHash.nodesArray));
 
 
-        System.out.println(newHash.nodesArray[2].next);
+//        System.out.println(newHash.nodesArray[2].next);
 
 //
-        String text = "It was the best of times, it was the worst of times,";
-        System.out.println(repeatedWord(text));
+//        String text = "It was the best of times, it was the worst of times,";
+//        System.out.println(repeatedWord(text));
 
         //---------------binary tree -------------
 
-        BinaryTree<Integer> tree1 = new BinaryTree<>();
-        tree1.root = new TreeNode<Integer>(150);
-        tree1.root.left = new TreeNode<Integer>(100);
-        tree1.root.right = new TreeNode<Integer>(250);
-        tree1.root.left.left = new TreeNode<Integer>(75);
-        tree1.root.left.right = new TreeNode<Integer>(160);
-        tree1.root.left.right.left = new TreeNode<Integer>(125);
-        tree1.root.left.right.right = new TreeNode<Integer>(175);
-        tree1.root.right.left = new TreeNode<Integer>(200);
-        tree1.root.right.right = new TreeNode<Integer>(350);
-        tree1.root.right.right.left = new TreeNode<Integer>(300);
-        tree1.root.right.right.right = new TreeNode<Integer>(500);
+//        BinaryTree<Integer> tree1 = new BinaryTree<>();
+//        tree1.root = new TreeNode<Integer>(150);
+//        tree1.root.left = new TreeNode<Integer>(100);
+//        tree1.root.right = new TreeNode<Integer>(250);
+//        tree1.root.left.left = new TreeNode<Integer>(75);
+//        tree1.root.left.right = new TreeNode<Integer>(160);
+//        tree1.root.left.right.left = new TreeNode<Integer>(125);
+//        tree1.root.left.right.right = new TreeNode<Integer>(175);
+//        tree1.root.right.left = new TreeNode<Integer>(200);
+//        tree1.root.right.right = new TreeNode<Integer>(350);
+//        tree1.root.right.right.left = new TreeNode<Integer>(300);
+//        tree1.root.right.right.right = new TreeNode<Integer>(500);
+//
+//        BinaryTree<Integer> tree2 = new BinaryTree<>();
+//        tree2.root = new TreeNode<Integer>(42);
+//        tree2.root.left = new TreeNode<Integer>(100);
+//        tree2.root.right = new TreeNode<Integer>(600);
+//        tree2.root.left.left = new TreeNode<Integer>(15);
+//        tree2.root.left.right = new TreeNode<Integer>(160);
+//        tree2.root.left.right.left = new TreeNode<Integer>(125);
+//        tree2.root.left.right.right = new TreeNode<Integer>(175);
+//        tree2.root.right.left = new TreeNode<Integer>(200);
+//        tree2.root.right.right = new TreeNode<Integer>(350);
+//        tree2.root.right.right.left = new TreeNode<Integer>(4);
+//        tree2.root.right.right.right = new TreeNode<Integer>(500);
+//        System.out.println(treeIntersection(tree1,tree2));
 
-        BinaryTree<Integer> tree2 = new BinaryTree<>();
-        tree2.root = new TreeNode<Integer>(42);
-        tree2.root.left = new TreeNode<Integer>(100);
-        tree2.root.right = new TreeNode<Integer>(600);
-        tree2.root.left.left = new TreeNode<Integer>(15);
-        tree2.root.left.right = new TreeNode<Integer>(160);
-        tree2.root.left.right.left = new TreeNode<Integer>(125);
-        tree2.root.left.right.right = new TreeNode<Integer>(175);
-        tree2.root.right.left = new TreeNode<Integer>(200);
-        tree2.root.right.right = new TreeNode<Integer>(350);
-        tree2.root.right.right.left = new TreeNode<Integer>(4);
-        tree2.root.right.right.right = new TreeNode<Integer>(500);
-        System.out.println(treeIntersection(tree1,tree2));
+
+
+
+        //-----------left-join-----------------
+        HashMap<String,String> hashmap1 = new HashMap<>();
+        HashMap<String,String> hashmap2 = new HashMap<>();
+
+        hashmap1.put("fond","enamored");
+        hashmap1.put("wrath","anger");
+        hashmap1.put("diligent","employed");
+        hashmap1.put("outfit","garb");
+        hashmap1.put("guide","usher");
+
+        hashmap2.put("fond","averse");
+        hashmap2.put("wrath","delight");
+        hashmap2.put("diligent","idle");
+        hashmap2.put("guide","follow");
+        hashmap2.put("flow","jam");
+
+
+        System.out.println(hashmap1.toString());
+        System.out.println(hashmap2.toString());
+        System.out.println((leftJoin(hashmap1,hashmap2)).toString());
 
     }
     public static String  repeatedWord(String text){
@@ -141,6 +164,20 @@ public class App {
         return  results;
 
 
+    }
+
+
+    public static List<String> leftJoin(HashMap hashOne , HashMap hashTwo){
+        List<String> result = new ArrayList<>();
+        hashOne.forEach((key,value)->{
+            if (hashTwo.containsKey(key)){
+                result.add(key + ": " + value + " , " + hashTwo.get(key) + "\n");
+            }else{
+                result.add(key + ": " + value + " , " + "Null"+ "\n");
+            }
+        });
+
+        return result;
     }
 
 }

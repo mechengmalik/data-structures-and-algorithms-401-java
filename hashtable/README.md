@@ -58,3 +58,26 @@ Space:o(n)
 * treeIntersection: takes two binary trees as parameters,
   Using Hashmap implementation ,return a set of values found in both trees.
 
+
+
+### Challenge 33
+# Hashmap LEFT JOIN
+
+Implement a simplified LEFT JOIN for two Hashmaps.
+
+## Challenge
+
+Write a function that LEFT JOINs two hashmaps into a single data structure.
+
+## Approach & Efficiency
+
+the big O notation of the function is :
+time complexity = O(n)   
+space complexity = O(n)  
+
+## API
+takes two hashMap as parameters, Looping over them and return  an array contain the matched key with the value of it.
+
+## Solution
+
+![leftJoin](CC33.png)
