@@ -27,5 +27,5 @@
 | Hash Table                         | [link](hashtable/README.md)                                  |
 | hashmap-repeated-word              | [link](hashtable/README.md)                                  |
 | hashmap-tree-intersection          | [link](hashtable/README.md)
-| hashmap-left-join                  | [link](hashtable/README.md)                                  ||
-
+| hashmap-left-join                  | [link](hashtable/README.md)                                  |
+| graphs                             | [link](graph/README.md)                                  |
