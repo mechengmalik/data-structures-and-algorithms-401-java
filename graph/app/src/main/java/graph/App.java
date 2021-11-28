@@ -3,8 +3,6 @@
  */
 package graph;
 
-import java.util.ArrayList;
-
 public class App {
     public String getGreeting() {
         return "Hello World!";
@@ -13,21 +11,39 @@ public class App {
     public static void main(String[] args) {
         Graph<Integer> graph1 = new Graph<>();
 
-        Node<Integer> node1 = graph1.addNode(5);
-        Node<Integer> node2 = graph1.addNode(6);
-        graph1.addEdge(node1,node2,true);
+//        Node<Integer> node1 = graph1.addNode(5);
+//        Node<Integer> node2 = graph1.addNode(6);
+//        graph1.addEdge(node1,node2,true);
+//
+//        Node<Integer> node3 = graph1.addNode(4);
+//        Node<Integer> node4 = graph1.addNode(3);
+//        graph1.addEdge(node3,node4,false);
+//
+//        graph1.addEdge(node1,node3,true);
+//        graph1.addEdge(node2,node4,false);
+//
+//        System.out.println(graph1.getNodes().size());
+//        System.out.println(graph1.getNodes());
+//        System.out.println(graph1.getNeighbors(node1).toString());
+        Graph<String> graph2 = new Graph<>();
 
-        Node<Integer> node3 = graph1.addNode(4);
-        Node<Integer> node4 = graph1.addNode(3);
-        graph1.addEdge(node3,node4,false);
 
-        graph1.addEdge(node1,node3,true);
-        graph1.addEdge(node2,node4,false);
+        Node<String> a = graph2.addNode("M");
+        Node<String> b =  graph2.addNode("A");
+        Node<String> c = graph2.addNode("L");
+        Node<String> d = graph2.addNode("I");
+        Node<String> e = graph2.addNode("K");
 
-        System.out.println(graph1.getNodes().size());
-        System.out.println(graph1.getNodes());
-        System.out.println(graph1.getNeighbors(node1).toString());
+        graph2.addEdge(a,b,true);
+        graph2.addEdge(b,c,true);
+        graph2.addEdge(c,d,true);
+        graph2.addEdge(b,e,true);
+        graph2.addEdge(e,e,true);
 
+        graph2.breadthF(a);
 
     }
+
+
 }
+
