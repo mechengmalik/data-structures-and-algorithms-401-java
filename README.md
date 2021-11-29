@@ -30,3 +30,5 @@
 | hashmap-left-join                  | [link](hashtable/README.md)                                  |
 | graphs                             | [link](graph/README.md)                                  |
 | graph-breadth-first                | [link](graph/README.md)                                  |
+| graph-business-trip               | [link](graph/README.md)                                  |
+

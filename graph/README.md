@@ -116,3 +116,21 @@ L
 I
 K
 ```
+
+# challenge 37
+
+* Check if given nodes can be traversed(connected) or not and return boolean and total weight.
+
+## Whiteboard Process
+
+![Whiteboard Process](busnis%20trip.png)
+
+## Approach & Efficiency
+
+### the big O notation
+
+time = O(n)   
+space = O(n)
+## Solution
+
+Add edges between specific nodes and call the method and after that print the result.
