@@ -3,6 +3,9 @@
  */
 package graph;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class App {
     public String getGreeting() {
         return "Hello World!";
@@ -25,22 +28,52 @@ public class App {
 //        System.out.println(graph1.getNodes().size());
 //        System.out.println(graph1.getNodes());
 //        System.out.println(graph1.getNeighbors(node1).toString());
-        Graph<String> graph2 = new Graph<>();
+
+        //-------------------------------------//
+//        Graph<String> graph2 = new Graph<>();
+//
+//
+//        Node<String> a = graph2.addNode("M");
+//        Node<String> b =  graph2.addNode("A");
+//        Node<String> c = graph2.addNode("L");
+//        Node<String> d = graph2.addNode("I");
+//        Node<String> e = graph2.addNode("K");
+//
+//        graph2.addEdge(a,b,true);
+//        graph2.addEdge(b,c,true);
+//        graph2.addEdge(c,d,true);
+//        graph2.addEdge(b,e,true);
+//        graph2.addEdge(e,e,true);
+//
+//        graph2.breadthF(a);
 
 
-        Node<String> a = graph2.addNode("M");
-        Node<String> b =  graph2.addNode("A");
-        Node<String> c = graph2.addNode("L");
-        Node<String> d = graph2.addNode("I");
-        Node<String> e = graph2.addNode("K");
+        //-------------------------graphBusinessTrip------------//
+        Graph<String> travelGraph = new Graph<>();
+        List<String> cities =new ArrayList<>();
+        cities.add("Amman");
+        cities.add("Aqaba");
+        cities.add("Irbid");
+        cities.add("Salt");
 
-        graph2.addEdge(a,b,true);
-        graph2.addEdge(b,c,true);
-        graph2.addEdge(c,d,true);
-        graph2.addEdge(b,e,true);
-        graph2.addEdge(e,e,true);
 
-        graph2.breadthF(a);
+        Node<String> c1 =  travelGraph.addNode(cities.get(0));
+        Node<String> c2 = travelGraph.addNode(cities.get(1));
+        Node<String> c3 = travelGraph.addNode(cities.get(2));
+        Node<String> c4 = travelGraph.addNode(cities.get(3));
+
+        travelGraph.addEdge(c1,c2,150,true);
+        travelGraph.addEdge(c2,c3,100,true);
+        travelGraph.addEdge(c3,c4,80,true);
+        travelGraph.addEdge(c4,c1,90,true);
+        travelGraph.addEdge(c2,c4,120,true);
+        System.out.println();
+
+
+        System.out.println(travelGraph.getNodes().size());
+        System.out.println(travelGraph.getNodes());
+        System.out.println(travelGraph.getNeighbors(c1).toString());
+        System.out.println(travelGraph.graphBusinessTrip(cities));
 
     }
 
