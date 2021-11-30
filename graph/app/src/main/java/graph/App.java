@@ -26,26 +26,26 @@ public class App {
 //        graph1.addEdge(node2,node4,false);
 //
 //        System.out.println(graph1.getNodes().size());
-//        System.out.println(graph1.getNodes());
+//        System.out.println(graph1.getNodes().);
 //        System.out.println(graph1.getNeighbors(node1).toString());
 
         //-------------------------------------//
-//        Graph<String> graph2 = new Graph<>();
-//
-//
-//        Node<String> a = graph2.addNode("M");
-//        Node<String> b =  graph2.addNode("A");
-//        Node<String> c = graph2.addNode("L");
-//        Node<String> d = graph2.addNode("I");
-//        Node<String> e = graph2.addNode("K");
-//
-//        graph2.addEdge(a,b,true);
-//        graph2.addEdge(b,c,true);
-//        graph2.addEdge(c,d,true);
-//        graph2.addEdge(b,e,true);
+        Graph<String> graph2 = new Graph<>();
+
+
+        Node<String> a = graph2.addNode("M");
+        Node<String> b =  graph2.addNode("A");
+        Node<String> c = graph2.addNode("L");
+        Node<String> d = graph2.addNode("I");
+        Node<String> e = graph2.addNode("K");
+
+        graph2.addEdge(a,b,true);
+        graph2.addEdge(b,c,true);
+        graph2.addEdge(c,d,true);
+        graph2.addEdge(d,e,true);
 //        graph2.addEdge(e,e,true);
-//
-//        graph2.breadthF(a);
+
+        graph2.breadthF(a);
 
 
         //-------------------------graphBusinessTrip------------//
@@ -57,23 +57,50 @@ public class App {
         cities.add("Salt");
 
 
-        Node<String> c1 =  travelGraph.addNode(cities.get(0));
-        Node<String> c2 = travelGraph.addNode(cities.get(1));
-        Node<String> c3 = travelGraph.addNode(cities.get(2));
-        Node<String> c4 = travelGraph.addNode(cities.get(3));
+//        Node<String> c1 =  travelGraph.addNode(cities.get(0));
+//        Node<String> c2 = travelGraph.addNode(cities.get(1));
+//        Node<String> c3 = travelGraph.addNode(cities.get(2));
+//        Node<String> c4 = travelGraph.addNode(cities.get(3));
+//
+//        travelGraph.addEdge(c1,c2,true);
+//        travelGraph.addEdge(c2,c3,true);
+//        travelGraph.addEdge(c3,c4,true);
+//        travelGraph.addEdge(c4,c1,true);
+//        travelGraph.addEdge(c2,c4,true);
 
-        travelGraph.addEdge(c1,c2,150,true);
-        travelGraph.addEdge(c2,c3,100,true);
-        travelGraph.addEdge(c3,c4,80,true);
-        travelGraph.addEdge(c4,c1,90,true);
-        travelGraph.addEdge(c2,c4,120,true);
-        System.out.println();
+
+//        System.out.println(travelGraph.getNodes().size());
+//        System.out.println(travelGraph.getNodes());
+//        System.out.println(travelGraph.getNeighbors(c1).toString());
+//        System.out.println(travelGraph.graphBusinessTrip(travelGraph,cities));
+
+        //---------------------depth-first-----------------//
+
+        //A, B, C, G, D, E, H, F
+        Graph<String> graphDF = new Graph<>();
+
+        Node<String> A = graphDF.addNode("A");
+        Node<String> B =  graphDF.addNode("B");
+        Node<String> C = graphDF.addNode("C");
+        Node<String> D = graphDF.addNode("D");
+        Node<String> E = graphDF.addNode("E");
+        Node<String> F = graphDF.addNode("F");
+        Node<String> G = graphDF.addNode("G");
+        Node<String> H = graphDF.addNode("H");
 
 
-        System.out.println(travelGraph.getNodes().size());
-        System.out.println(travelGraph.getNodes());
-        System.out.println(travelGraph.getNeighbors(c1).toString());
-        System.out.println(travelGraph.graphBusinessTrip(cities));
+        graphDF.addEdge(A,B,false);
+        graphDF.addEdge(A,D,false);
+        graphDF.addEdge(B,C,false);
+        graphDF.addEdge(B,D,false);
+        graphDF.addEdge(C,G,false);
+        graphDF.addEdge(D,E,false);
+        graphDF.addEdge(D,H,false);
+        graphDF.addEdge(D,F,false);
+        graphDF.addEdge(H,F,false);
+
+
+        System.out.println(graphDF.depthFirst(A));
 
     }
 
