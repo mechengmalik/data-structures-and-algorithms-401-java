@@ -2,7 +2,7 @@ package graph;
 
 public class Edges <T> {
     private graph.Node node;
-    int Weight;
+   private int Weight;
 
     public Edges(graph.Node node, int Weight) {
         this.node = node;
@@ -13,8 +13,16 @@ public class Edges <T> {
         return node;
     }
 
-    public void setVertex(graph.Node node) {
+    public void setNode(Node node) {
         this.node = node;
+    }
+
+    public int getWeight() {
+        return Weight;
+    }
+
+    public void setWeight(int weight) {
+        Weight = weight;
     }
 
     @Override

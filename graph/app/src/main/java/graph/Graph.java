@@ -3,21 +3,30 @@ package graph;
 import java.util.*;
 
 public class Graph<T> {
-    Map<Node<T>, List<Node<T>>> graph = new HashMap<>();
+    Map<graph.Node<T>, ArrayList<graph.Node<T>>> graph = new HashMap<>();
+    List<graph.Node<T>> nodes = new ArrayList<>();
 
 
     public Graph() {
     }
 
 
-    public Node<T> addNode(T value) {
-        Node<T> newNode = new Node<>(value);
+    public graph.Node<T> addNode(T value) {
+        graph.Node<T> newNode = new graph.Node(value);
         graph.put(newNode, new ArrayList<>());
 
         return newNode;
     }
 
-    public void addEdge(Node<T> root, Node<T> neighbor, boolean undirected) {
+    public Map<graph.Node<T>, ArrayList<graph.Node<T>>> getGraph() {
+        return graph;
+    }
+
+    public void setGraph(Map<graph.Node<T>, ArrayList<graph.Node<T>>> graph) {
+        this.graph = graph;
+    }
+
+    public void addEdge(graph.Node<T> root, graph.Node<T> neighbor, boolean undirected) {
 
         graph.get(root).add(neighbor);
         if (undirected) {
@@ -27,8 +36,8 @@ public class Graph<T> {
     }
 
     public void addEdge(Node<T> root, Node<T> neighbor,int weight, boolean undirected) {
-        Node<T> nodeWithWeight1 = new Node<>(root.value, weight);
-        Node<T> nodeWithWeight2 = new Node<>(neighbor.value, weight);
+        graph.Node<T> nodeWithWeight1 = new graph.Node<>(root.getValue(), root.next);
+        graph.Node<T> nodeWithWeight2 = new graph.Node<>(neighbor.getValue());
 
 
 
@@ -40,16 +49,12 @@ public class Graph<T> {
     }
 
     public boolean hasEdge(Node f, Node e){
-        if (graph.get(f).contains(e)){
-           return true;
-        }else {
-            return false;
-        }
+        return graph.get(f).contains(e);
     }
 
-    public Set<Node<T>> getNodes() {
+    public Set<graph.Node<T>> getNodes() {
 
-        Set<Node<T>> visitedNodes = new HashSet<>();
+        Set<graph.Node<T>> visitedNodes = new HashSet<>();
 
         if (!graph.isEmpty()) {
 
@@ -65,7 +70,7 @@ public class Graph<T> {
 
     }
 
-    public List<Node<T>> getNeighbors(Node<T> neighbor) {
+    public ArrayList<graph.Node<T>> getNeighbors(graph.Node<T> neighbor) {
         return graph.get(neighbor);
 
 
@@ -92,7 +97,7 @@ public class Graph<T> {
 
         while (!queue.isEmpty()) {
 
-            Node<T> front = queue.get(0);
+            graph.Node<T> front = queue.get(0);
             queue.remove(0);
             list.add(front);
 
@@ -106,61 +111,42 @@ public class Graph<T> {
             }
 
         }
-        for (int i = 0; i < list.size(); i++) {
+        for (Node<T> tNode : list) {
 
-            System.out.println(list.get(i).value);
+            System.out.println(tNode.getValue());
         }
         return list;
     }
 
-//    public String graphBusinessTrip(List<String> cities){
-//        int cost = 0;
-//        if (cities.size()<=1){
-//            return "False, "+ cost + " $";
-//        }
-////        Node<String> newNode = new Node<>();
-////        Node<String> newNode1 = new Node<>();
-//
-//
-//        for (int i =0; i<cities.size(); i++){
-//
-//            Node<String> newNode = new Node<>(cities.get(i));
-//            Node<String> newNode1 = new Node<>(cities.get(i+1));
-//
-//
-//
-//            if (graph.containsKey(newNode1)){
-//                // if (getNeighbors((Node<T>) newNode).contains(newNode1)){
-//                cost += newNode1.weight;
-//
-//
-//            }else {
-//                cost = 0;
-//                break;
+
+    public List<Node<T>> depthFirst(Node<T> root){
+        this.nodes.add(root);
+
+        if (!graph.get(root).isEmpty()){
+
+            for(Node<T> node :getNeighbors(root) ) {
+                if (!nodes.contains(node)){
+                    depthFirst(node);
+                }
+            }
+        }else {
+            return null;
+        }
+        return nodes;
+    }
+
+//    public String graphBusinessTrip(Graph graph,List<String> cities){
+//        Integer cost=0;
+//        for (int i=0;i<cities.size()-1;i++){
+//            Node<String> node=new Node<>(cities.get(i));
+//            Node<String> nextNode=new Node<>(cities.get(i+1));
+//            if (((Map)graph.getGraph().get(node)).get(nextNode)!=null){
+//                cost+=((Integer)((Map)graph.getGraph().get(node)).get(nextNode));
+//                System.out.println(cost);
 //            }
 //        }
-//        if (cost==0){
-//            return "False, "+ cost + " $";
-//        }else {
-//            return "True, "+ cost + " $";
-//        }
-
-
+//        return cost > 0 ? "True, $" + cost : "False, $" + cost;
 //    }
-//      for (int i =0; i<cities.size(); i++){
-//        Node<String> newNode = new Node<>();
-//
-//
-//        newNode=graph.addNode(cities.get(i));
-////            newNode1 =graph.addNode(cities.get(i+1));
-//
-//        if (newNode.weight ==0){
-//            return "False, "+ cost + " $";
-//
-//
-//        }else {
-//            return "True, "+ cost + " $";
-//        }
 
 
 }

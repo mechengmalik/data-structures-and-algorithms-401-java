@@ -106,4 +106,45 @@ class AppTest {
         assertEquals(result,graph2.breadthF(a));
 
     }
+    @Test void depthTest(){
+        Graph<String> graphDF = new Graph<>();
+
+        Node<String> A = graphDF.addNode("A");
+        Node<String> B =  graphDF.addNode("B");
+        Node<String> C = graphDF.addNode("C");
+        Node<String> D = graphDF.addNode("D");
+        Node<String> E = graphDF.addNode("E");
+        Node<String> F = graphDF.addNode("F");
+        Node<String> G = graphDF.addNode("G");
+        Node<String> H = graphDF.addNode("H");
+
+
+        graphDF.addEdge(A,B,false);
+        graphDF.addEdge(A,D,false);
+        graphDF.addEdge(B,C,false);
+        graphDF.addEdge(B,D,false);
+        graphDF.addEdge(C,G,false);
+        graphDF.addEdge(D,E,false);
+        graphDF.addEdge(D,H,false);
+        graphDF.addEdge(D,F,false);
+        graphDF.addEdge(H,F,false);
+
+        List<Node<String>> MyList = new ArrayList<>();
+        MyList.add(A);
+        MyList.add(B);
+        MyList.add(C);
+        MyList.add(G);
+        MyList.add(D);
+        MyList.add(E);
+        MyList.add(H);
+        MyList.add(F);
+
+
+        assertEquals(MyList,graphDF.depthFirst(A));
+
+
+
+
+
+    }
 }
